@@ -32,7 +32,7 @@ display = Matrix8x8(spi, CS, 1, orientation=1)
 while True:
 
     # show a string scrolling through the Matrix
-    display.text_scroll(text1)
+    display.text_scroll(text)
 ```
 
 ### Displaying one word at a time
