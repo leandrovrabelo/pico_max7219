@@ -14,7 +14,7 @@ The Pico does'nt have a 5v pin, but the VBUS is connected to the power input. Th
 
 ## Usage Example
 
-```
+```python
   from max7219 import Matrix8x8
   from machine import Pin, SPI
   from utime import sleep
