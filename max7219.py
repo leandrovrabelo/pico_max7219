@@ -19,7 +19,7 @@ class Matrix8x8:
         BRIGHTNESS = 3 # from 0 to 15
         
         text = "Hello World!"
-        # CLK = GPIO6 and MOSI (DIN) = GPIO6 are the default pins of SPI0 so you can omit it
+        # CLK = GPIO6 and MOSI (DIN) = GPIO7 are the default pins of SPI0 so you can omit it
         spi = SPI(0, baudrate= 10_000_000,  sck=CLK, mosi=DIN)
         display = Matrix8x8(spi, CS, 1, orientation=1)
         display.brightness(BRIGHTNESS)
