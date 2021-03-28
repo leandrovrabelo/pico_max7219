@@ -23,7 +23,7 @@ CS = Pin(5, Pin.OUT) # GPIO5 pin 7
 CLK = Pin(6) # GPIO6 pin 9
 DIN = Pin(7) # GPIO7 pin 10
 
-text = "Hello World!"
+text = "VISITE O CANAL BRINQUEDOS MAKER NO YOUTUBE"
 
 # CLK = GPIO6 and MOSI (DIN) = GPIO7 are the default pins of SPI0 so you can omit it
 spi = SPI(0, baudrate= 10_000_000,  sck=CLK, mosi=DIN)
@@ -46,7 +46,7 @@ CS = Pin(5, Pin.OUT) # GPIO5 pin 7
 CLK = Pin(6) # GPIO6 pin 9
 DIN = Pin(7) # GPIO7 pin 10
 
-text = "PICO PI"
+text = "Hello World!"
 
 # CLK = GPIO6 and MOSI (DIN) = GPIO7 are the default pins of SPI0 so you can omit it
 spi = SPI(0, baudrate= 10_000_000,  sck=CLK, mosi=DIN)
