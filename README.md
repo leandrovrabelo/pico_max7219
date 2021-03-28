@@ -25,7 +25,7 @@ DIN = Pin(7) # GPIO7 pin 10
 
 text = "Hello World!"
 
-# CLK = GPIO6 and MOSI (DIN) = GPIO6 are the default pins of SPI0 so you can omit it
+# CLK = GPIO6 and MOSI (DIN) = GPIO7 are the default pins of SPI0 so you can omit it
 spi = SPI(0, baudrate= 10_000_000,  sck=CLK, mosi=DIN)
 display = Matrix8x8(spi, CS, 1, orientation=1)
 
@@ -48,7 +48,7 @@ DIN = Pin(7) # GPIO7 pin 10
 
 text = "PICO PI"
 
-# CLK = GPIO6 and MOSI (DIN) = GPIO6 are the default pins of SPI0 so you can omit it
+# CLK = GPIO6 and MOSI (DIN) = GPIO7 are the default pins of SPI0 so you can omit it
 spi = SPI(0, baudrate= 10_000_000,  sck=CLK, mosi=DIN)
 display = Matrix8x8(spi, CS, 1, orientation=1)
 
@@ -69,7 +69,7 @@ CS = Pin(5, Pin.OUT) # GPIO5 pin 7
 CLK = Pin(6) # GPIO6 pin 9
 DIN = Pin(7) # GPIO7 pin 10
 
-# CLK = GPIO6 and MOSI (DIN) = GPIO6 are the default pins of SPI0 so you can omit it
+# CLK = GPIO6 and MOSI (DIN) = GPIO7 are the default pins of SPI0 so you can omit it
 spi = SPI(0, baudrate= 10_000_000,  sck=CLK, mosi=DIN)
 display = Matrix8x8(spi, CS, 1, orientation=1)
 
