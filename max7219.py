@@ -84,7 +84,7 @@ class Matrix8x8:
 
     def text_scroll(self, text, delay=0.1):
 
-        text_lenght = len(text) * 8
+        text_lenght = len(text) 
         for pixel_position in range(text_lenght):
             self.fill(self.invert)
             self.text(text, -pixel_position, 0, not self.invert)
