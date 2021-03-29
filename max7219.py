@@ -24,7 +24,6 @@ class Matrix8x8:
         display = Matrix8x8(spi, CS, 1, orientation=1)
         display.brightness(BRIGHTNESS)
         display.invert = False
-
         """
         ORIENTATION_CONST = [framebuf.MONO_VLSB, # Vertical
                              framebuf.MONO_HLSB, # Horizontal
@@ -84,19 +83,20 @@ class Matrix8x8:
 
     def text_scroll(self, text, delay=0.1):
 
-        text_lenght = len(text) 
+        text_lenght = len(text) * 8
         for pixel_position in range(text_lenght):
-            self.fill(self.invert)
-            self.text(text, -pixel_position, 0, not self.invert)
+            self.text(text, -pixel_position, 0, 1)
             self.show()
             sleep(delay)
+            self.fill(self.invert)
+            self.show()
 
     def one_char_a_time(self, text, delay=0.2):
         # show a string one character at a time
 
         for char in text:
             self.fill(self.invert)
-            self.text(char, 0, 0, not self.invert)
+            self.text(char, 0, 0, 1)
             self.show()
             sleep(delay)
             
