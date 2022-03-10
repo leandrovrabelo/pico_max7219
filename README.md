@@ -1,5 +1,5 @@
 # Raspberry Pico MAX7219 Matrix LED
-An Pico integration from [FideliusFalcon' MicroPython MAX7219 library](https://github.com/FideliusFalcon/rpi_pico_max7219) and also from [Adafruit's Circuit Python Max7219](https://github.com/adafruit/Adafruit_CircuitPython_MAX7219).
+A Pico integration from [FideliusFalcon' MicroPython MAX7219 library](https://github.com/FideliusFalcon/rpi_pico_max7219) and also from [Adafruit's Circuit Python Max7219](https://github.com/adafruit/Adafruit_CircuitPython_MAX7219).
 
 
 ## Wiring
